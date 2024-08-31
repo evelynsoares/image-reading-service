@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const GEMINI_API_URL = 'https://ai.google.dev/gemini-api/vision'; // Atualize com a URL correta
+const GEMINI_API_URL = 'https://ai.google.dev/gemini-api/vision'; 
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 
 export const extractMeasureFromImage = async (base64Image: string): Promise<number> => {
@@ -12,7 +12,7 @@ export const extractMeasureFromImage = async (base64Image: string): Promise<numb
       },
       {
         headers: {
-          'Authorization': `Bearer AIzaSyDUIyU-DfMbeHJtxo_WAlCInWGlttQvAq4`,
+          'Authorization': `Bearer `,
           'Content-Type': 'application/json',
         },
       }
